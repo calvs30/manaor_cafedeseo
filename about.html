@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcharap | Premium Matcha & Cafe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  fontFamily: {
+                      serif: ['"Playfair Display"', 'serif'],
+                      sans: ['Inter', 'sans-serif'],
+                  }
+              }
+          }
+      }
+  </script>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+
+                <div class="flex-shrink-0">
+                    <a href="index.html"
+                    class="font-serif text-3xl font-bold text-emerald-900 tracking-tight">
+                        Cafe Deseo.
+                    </a>
+                </div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                    class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                        Home
+                    </a>
+
+                    <a href="about.html"
+                    class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                        About
+                    </a>
+
+                    <a href="menu.html"
+                    class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                        Menu
+                    </a>
+
+                    <a href="faq.html"
+                    class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                        FAQs
+                    </a>
+
+                    <a href="game.html"
+                    class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                        Game
+                    </a>
+
+                </div>
+
+                <div class="hidden md:flex">
+
+                    <a href="contact.html"
+                    class="bg-emerald-900 text-white px-6 py-2.5 rounded-full hover:bg-emerald-800 transition font-medium shadow-md hover:shadow-lg">
+                        Contact Us
+                    </a>
+
+                </div>
+
+                <button onclick="Menu(this)"
+                        class="md:hidden text-3xl text-emerald-900">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-white shadow-lg">
+
+            <div class="flex flex-col px-6 py-5 space-y-5">
+
+                <a href="index.html"
+                class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                    Home
+                </a>
+
+                <a href="about.html"
+                class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                    About
+                </a>
+
+                <a href="menu.html"
+                class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                    Menu
+                </a>
+
+                <a href="faq.html"
+                class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                    FAQs
+                </a>
+
+                <a href="game.html"
+                class="text-gray-700 hover:text-emerald-600 transition font-medium">
+                    Game
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="about-hero" class="relative pt-36 pb-24 min-h-[400px] bg-[url('https://github.com/calvs30/images/blob/main/cafe-and-restaurant-optimized.jpg?raw=true')] bg-cover bg-center flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black/55"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 w-full">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="font-serif text-5xl lg:text-7xl text-white font-bold leading-tight mb-8">
+                    Warmth and <br>
+                    Comfort of <span class="text-emerald-100 italic">Home</span>
+                </h1>
+
+                <p class="text-lg lg:text-xl text-gray-200 leading-relaxed max-w-2xl mx-auto">
+                    Bringing families and communities together with generosity & hospitality that recalls
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-story" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <img 
+                        src="https://github.com/calvs30/images/blob/main/cafedeseo1.png?raw=true"
+                        alt="Cafe Interior"
+                        class="rounded-3xl shadow-2xl w-full h-[600px] object-cover">
+
+                    <div class="absolute -bottom-8 -right-8 bg-emerald-900 text-white p-8 rounded-3xl shadow-2xl hidden md:block">
+                        <h3 class="text-4xl font-bold mb-2">
+                            5+
+                        </h3>
+
+                        <p class="text-emerald-100">
+                            Years of Brewing Memories
+                        </p>
+
+                    </div>
+                </div>
+
+                <div>
+
+                    <span class="text-emerald-700 font-semibold tracking-widest uppercase text-sm">
+                        Our Story
+                    </span>
+
+                    <h2 class="font-serif text-4xl lg:text-5xl font-bold text-emerald-950 leading-tight mt-4 mb-8">
+                        More Than Just A Coffee Shop
+                    </h2>
+
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        At Cafe Deseo, everything began with a simple dream — to create a space where people could slow down, share stories, and feel 
+                        at home over a good cup of coffee. What started as a small passion project slowly grew into a cozy café filled with laughter, 
+                        conversations, and meaningful moments.
+                    </p>
+
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Inspired by the warmth of family gatherings and comforting homemade flavors, we carefully craft every drink, pastry, and café 
+                        meal with love and intention. From handcrafted lattes to freshly baked treats, each item is made to bring comfort, nostalgia, 
+                        and happiness to every guest who walks through our doors.
+                    </p>
+
+                    <p class="text-gray-700 text-lg leading-relaxed mb-10">
+                        Cafe Deseo is more than just a café to us — it is a home built on connection, warmth, and heartfelt hospitality. We welcome you 
+                        with open arms, hoping every visit leaves you with full hearts, fond memories, and the feeling of belonging.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-matcha-100 flex items-center justify-center shrink-0">
+                                <ion-icon name="cafe-outline" class="text-2xl text-emerald-900"></ion-icon>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold text-lg text-emerald-950 mb-2">
+                                    Handcrafted Coffee
+                                </h3>
+
+                                <p class="text-gray-600 text-sm">
+                                    Freshly brewed coffee made with passion and premium ingredients.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-matcha-100 flex items-center justify-center shrink-0">
+                                <ion-icon name="restaurant-outline" class="text-2xl text-emerald-900"></ion-icon>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold text-lg text-emerald-950 mb-2">
+                                    Comfort Food
+                                </h3>
+
+                                <p class="text-gray-600 text-sm">
+                                    Delicious meals and pastries inspired by nostalgic flavors.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-matcha-100 flex items-center justify-center shrink-0">
+                                <ion-icon name="people-outline" class="text-2xl text-emerald-900"></ion-icon>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold text-lg text-emerald-950 mb-2">
+                                    Cozy Atmosphere
+                                </h3>
+
+                                <p class="text-gray-600 text-sm">
+                                    A relaxing space for conversations, studying, and meaningful moments.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-matcha-100 flex items-center justify-center shrink-0">
+                                <ion-icon name="heart-outline" class="text-2xl text-emerald-900"></ion-icon>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold text-lg text-emerald-950 mb-2">
+                                    Made With Passion
+                                </h3>
+
+                                <p class="text-gray-600 text-sm">
+                                    Every detail is carefully crafted to create memorable experiences.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-4xl mx-auto">
+                <span class="text-emerald-700 font-semibold tracking-widest uppercase text-sm">
+                    Our Mission
+                </span>
+
+                <h2 class="font-serif text-4xl lg:text-5xl font-bold text-emerald-950 mt-4 mb-8">
+                    Creating Spaces Where People Feel At Home
+                </h2>
+
+                <p class="text-gray-700 text-lg leading-relaxed mb-14">
+                    Our mission is to serve high-quality coffee, comforting meals, and unforgettable café experiences while building a warm community where every customer feels welcome.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-matcha-100 flex items-center justify-center mb-6">
+                        <ion-icon name="leaf-outline" class="text-3xl text-emerald-900"></ion-icon>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-emerald-950 mb-4">
+                        Quality Ingredients
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        We carefully choose fresh and premium ingredients to ensure every dish and drink exceeds expectations.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-matcha-100 flex items-center justify-center mb-6">
+                        <ion-icon name="sparkles-outline" class="text-3xl text-emerald-900"></ion-icon>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-emerald-950 mb-4">
+                        Memorable Experiences
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Every visit is designed to create meaningful moments filled with comfort, warmth, and connection.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-10 shadow-lg hover:shadow-2xl transition duration-300">
+                    <div class="w-16 h-16 rounded-2xl bg-matcha-100 flex items-center justify-center mb-6">
+                        <ion-icon name="home-outline" class="text-3xl text-emerald-900"></ion-icon>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-emerald-950 mb-4">
+                        Welcoming Community
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        We strive to create a café environment where everyone can relax, connect, and feel at home.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="visit" class="relative bg-emerald-950 text-emerald-50 py-20 overflow-hidden">
+        <div class="absolute top-0 left-0 w-72 h-72 bg-emerald-800/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-lime-400/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-emerald-800 pb-14">
+                <div>
+                    <h2 class="font-serif text-4xl font-bold mb-5">
+                        Cafe Deseo
+                    </h2>
+
+                    <p class="text-emerald-200 leading-relaxed text-sm">
+                        Serving handcrafted coffee, delicious café favorites, and cozy moments that bring people together every day.
+                    </p>
+
+                    <div class="flex gap-3 mt-6">
+                        <span class="bg-emerald-900 px-4 py-2 rounded-full text-xs font-medium text-emerald-100">
+                            Cozy Vibes
+                        </span>
+
+                        <span class="bg-emerald-900 px-4 py-2 rounded-full text-xs font-medium text-emerald-100">
+                            Fresh Brews
+                        </span>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold mb-5 text-white">
+                        Visit Us
+                    </h4>
+
+                    <div class="space-y-4 text-emerald-200 text-sm">
+                        <div class="flex items-start gap-3">
+                            <ion-icon name="location-outline" class="text-xl text-emerald-200 mt-0.5"></ion-icon>
+                            <p>
+                                123 Cafe Avenue, Business District
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <ion-icon name="time-outline" class="text-xl text-emerald-200 mt-0.5"></ion-icon>
+                            <p>
+                                Open Daily: 8:00 AM – 10:00 PM
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <ion-icon name="cafe-outline" class="text-xl text-emerald-200 mt-0.5"></ion-icon>
+                            <p>
+                                Dine-in • Takeout • Reservations
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold mb-5 text-white">
+                        Contact
+                    </h4>
+
+                    <div class="space-y-4 text-emerald-200 text-sm">
+
+                        <div class="flex items-start gap-3">
+                            <ion-icon name="mail-outline" class="text-xl text-emerald-200 mt-0.5"></ion-icon>
+                            <p>
+                                hello@cafedeseo.com
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <ion-icon name="call-outline" class="text-xl text-emerald-200 mt-0.5"></ion-icon>
+                            <p>
+                                +63 912 345 6789
+                            </p>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <ion-icon name="globe-outline" class="text-xl text-emerald-200 mt-0.5"></ion-icon>
+                            <p>
+                                @CafeDeseoOfficial
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-semibold mb-5 text-white">
+                        Follow the Vibe
+                    </h4>
+
+                    <p class="text-emerald-200 text-sm mb-5 leading-relaxed">
+                        Stay updated with our latest drinks, café moments, and special promotions.
+                    </p>
+
+                    <div class="flex space-x-4">
+
+                        <a href="#"
+                        class="w-11 h-11 rounded-full bg-emerald-900 flex items-center justify-center hover:bg-emerald-800 hover:scale-110 transition duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+
+                        <a href="#"
+                        class="w-11 h-11 rounded-full bg-emerald-900 flex items-center justify-center hover:bg-emerald-800 hover:scale-110 transition duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
+
+                        <a href="#"
+                        class="w-11 h-11 rounded-full bg-emerald-900 flex items-center justify-center hover:bg-emerald-800 hover:scale-110 transition duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.115V2h-3.193v13.833c0 1.57-1.272 2.842-2.842 2.842a2.842 2.842 0 0 1 0-5.685c.31 0 .61.05.892.142V9.87a6.028 6.028 0 0 0-.892-.066A6.035 6.035 0 0 0 3.75 15.84a6.035 6.035 0 0 0 6.034 6.035 6.035 6.035 0 0 0 6.035-6.035V8.693a7.962 7.962 0 0 0 4.77 1.584V7.084a4.773 4.773 0 0 1-1-.398z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-emerald-200">
+                <p>
+                    © 2026 Cafe Deseo. All rights reserved.
+                </p>
+
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#" class="hover:text-white transition">
+                        Terms & Conditions
+                    </a>
+
+                    <a href="#" class="hover:text-white transition">
+                        FAQs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        function Menu(e) {
+
+            const menu = document.getElementById("mobileMenu");
+            const icon = e.querySelector("ion-icon");
+
+            menu.classList.toggle("hidden");
+
+            if (menu.classList.contains("hidden")) {
+                icon.setAttribute("name", "menu-outline");
+            } else {
+                icon.setAttribute("name", "close-outline");
+            }
+        }
+    </script>
+</body>
+</html>
+
